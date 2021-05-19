@@ -1,13 +1,22 @@
 try:
-    import os, requests, functionality
+    import os, requests, functionality, platform
     from bs4 import BeautifulSoup
 except ImportError as error:
     print(f"The following import error occured: {error}")
 
+def validarSOLimpiar():
+    sistema= platform.system()
+    if sistema== "Windows":
+        os.system("cls")
+    elif sistema== "Linux":
+        os.system("clear")
+    elif sistema== "Darwin":#Mac
+        os.system("clear")
+
 def main():
     modulo= functionality.functionality()
 
-    os.system("cls")
+    validarSOLimpiar()
     varia= []
     urlsOriginales= ["https://www.theverge.com/", "https://www.phoronix.com/", "https://es.gizmodo.com/", "https://www.engadget.com/"]
     misPosts= []
@@ -36,5 +45,5 @@ if __name__== "__main__":
     try:
         main()
     except Exception as e:
-        os.system("cls")
+        validarSOLimpiar()
         print(f"The following error ocurred: {e}")
