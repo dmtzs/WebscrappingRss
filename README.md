@@ -4,6 +4,8 @@
 The purspose is to show a method about how you can do webscrapping to the rss files and to find them in an html in case you cannot see the rss at first.
 <br>
 The data will be showed in a json format and will be sended to a json file too in order to use the information as we want.
+<br>
+Also we need to take in consideration that maybe we will need to change the entries with the time cause maybe thge attributes will change.
 
 ### installation, libraries and considerations
 * Python 3.7 or higher

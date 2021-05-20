@@ -28,7 +28,10 @@ def main():
         nuevo= sopa.find_all(href= True)#Lo que tengo igualado en mi href es para quitar los None´s en caso de que hayan.
         for i in nuevo:
             temp= i.get("href")
-            if ("rss" in temp) and ("https" in temp):
+            exp1="rss" in temp
+            exp2= "https" in temp
+            #if ("rss" in temp) and ("https" in temp):
+            if exp1 and exp2:
                 varia.append(temp)
     
     #print(varia)

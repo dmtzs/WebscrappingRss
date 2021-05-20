@@ -10,7 +10,7 @@ class functionality():
         nuevoFeed= feedparser.parse(urlRss)
         tagsEntries= nuevoFeed.entries
         postDetalles= {"Blog title": nuevoFeed.feed.title}
-        #print(tagsEntries)
+        print(tagsEntries)
 
         listaPosts= self.entries(tagsEntries, contador)
 
