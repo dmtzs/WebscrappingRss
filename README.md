@@ -10,9 +10,7 @@ Also we need to take in consideration that maybe we will need to change the entr
 ### installation, libraries and considerations
 * Python 3.7 or higher
 * It could be executed in Windows, Linux or Mac
-* pip install requests
-* pip install beautifulsoup4
-* pip install feedparser
+* Run the next coomand in order to install the other python libraries: pip install requirements.txt
 
 ### Execution of the exercise
 After all previous considerations are done in order to run the program you need to write in the terminal the next command:
